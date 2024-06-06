@@ -27,7 +27,6 @@ body {
 header {
     background-color: white;
     color: #000000;
-    position: absolute;
     width: 100%;
     padding-top: 5px;
     position: fixed;
@@ -35,41 +34,60 @@ header {
     z-index: 5;
     border-bottom: 2px solid #000 ;
     display: flex;
-    justify-content: center;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     transition: top 0.5s ease-in-out;
-    
+    justify-content: space-between;
 }
 
 header img{
     width: 100px;
     height: 100px;
-    display: flex;
-    justify-content: left;
+    margin-left: 25px;
 }
 
 .all{
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 header nav ul {
     list-style: none;
     display: flex;
-    justify-content: center;
+    gap: 20px;
 }
 
 header nav ul li {
-    margin-right: 20px;
-
+    font-size: large;
 }
 
 header nav ul li a {
     text-decoration: none;
     color: #000000;
     display: flex;
-    justify-content: center;
+}
+
+.login{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-right: 25px;
+    background-color: #7289DA;
+    border-radius: 5px;
+    width: 23vh;
+    height: 7vh;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.login img{
+    width: 60px;
+    height: 45px;
+    margin-right: 10px;
+}
+
+.login a{
+    color: #fff;
+    text-decoration: none;
+    font-size: large;
 }
 
 main .hero {
