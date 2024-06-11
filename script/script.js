@@ -4,6 +4,7 @@ function zmenaPodleClass(x){
 }
 function zmenaZpet(){
     document.body.style.backgroundImage = "url('/style/pic/1.png')";
+    
 
 }
 
