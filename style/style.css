@@ -9,7 +9,33 @@ body{
     backdrop-filter: blur(5px);
     height: 1500px;
 }
+.image-cropper {
+    max-width: 100px;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
 
+#logoMod{
+    height: 80px;
+    opacity: 0%;
+    transition: opacity ease-in-out .25s;
+    position: relative;
+    top: -50%;
+}
+
+.image-cropper img{
+    display: block;
+    margin: 0 auto;
+    height: auto;
+    width: 150%; 
+    margin: 0 0 0 -20%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;  
+}
 header{
     display: flex;
     align-items: center;
@@ -17,26 +43,26 @@ header{
 }
 
 header img{
-    max-width: 30%;
+    max-width: 500px;
     display: flex;
     margin-bottom: 20px;
     margin-top: 10px;
 }
-
-nav{
+#odkazy{
     display: flex;
     justify-content: center;
-    gap: 5%;
+}
+nav{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
     width: 100%;
     position: sticky;
-    top: 30px;
-
+    top: 50px;
 }
 nav a{
     padding: 1px;
-    border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
     text-decoration: none;
     color: rgb(255, 255, 255);
-    backdrop-filter: blur(5px);
+    margin-left: 5%;
 }
