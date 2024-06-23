@@ -9,32 +9,20 @@ body{
     backdrop-filter: blur(5px);
     height: 1500px;
 }
-.image-cropper {
-    max-width: 100px;
-    height: auto;
-    position: relative;
-    overflow: hidden;
-}
 
 #logoMod{
     height: 80px;
-    opacity: 0%;
-    transition: opacity ease-in-out .25s;
+    transition: left ease-in-out .25s;
     position: relative;
     top: -50%;
+    left: -100%;
 }
-
-.image-cropper img{
-    display: block;
-    margin: 0 auto;
-    height: auto;
-    width: 150%; 
-    margin: 0 0 0 -20%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    border-radius: 50%;  
+#logoLink{
+    left: -100%;
+    transition: left ease-in-out .25s;
+    position: relative;
+    width: 215px;
+    margin: 0%;
 }
 header{
     display: flex;
@@ -44,7 +32,6 @@ header{
 
 header img{
     max-width: 500px;
-    display: flex;
     margin-bottom: 20px;
     margin-top: 10px;
 }
@@ -52,17 +39,101 @@ header img{
     display: flex;
     justify-content: center;
 }
+
 nav{
+    z-index: 5;
     display: grid;
     justify-content: center;
+    height: 40px;
     grid-template-columns: 1fr 1fr 1fr;
     width: 100%;
     position: sticky;
     top: 50px;
 }
-nav a{
+#odkazy a{
+    height: min-content;
     padding: 1px;
     text-decoration: none;
     color: rgb(255, 255, 255);
     margin-left: 5%;
+}
+.fakce-container{
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    width: 100%;
+    transition: transform ease-in-out 0.3s,width ease-in-out 0.3s;
+}
+.fakce{
+
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-left: 10%;
+    margin-right: 10%;
+    overflow: hidden;
+}
+.fakce-container img{
+    z-index: 0;
+    filter: blur(10px);
+    width: 80vw;
+    position: relative;
+    background-color: white;
+    transition: width ease-in-out 0.3s, filter 0.3s;
+}
+.fakce-container img:hover{
+    filter: blur(2px);
+}
+.fakce-container:hover{
+    width: 500%;
+    justify-self: center;
+}
+
+#cont1:hover{transform: translateX(40%);}
+#cont2:hover{transform: translateX(20%);}
+#cont4:hover{transform: translateX(-20%);}
+#cont5:hover{transform: translateX(-40%);}
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+ 
+footer .container{
+    display: flex;
+    justify-content: left;
+    max-width: 100%;
+    padding: 20px;
+    color: rgba(255, 255, 255, 0.514);
+}
+
+.icons{
+    margin: 24px;
+}
+ 
+svg{
+    transition: .4s ease;
+    margin: 0 12px;
+}
+
+svg:hover{
+    fill: rgb(141, 141, 141);
+    transform: scale(1.3);
+}
+
+hr{
+    border-top: 1px solid rgba(255, 255, 255, 0.336);
+    width: 500px;
+    margin: 20px 0;
+    opacity: 25%;
 }
