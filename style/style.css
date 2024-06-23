@@ -95,6 +95,42 @@ nav{
 #cont2:hover{transform: translateX(20%);}
 #cont4:hover{transform: translateX(-20%);}
 #cont5:hover{transform: translateX(-40%);}
+
+.tým{
+    display: grid;
+    color: white;
+    justify-items: center;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.karta{
+    width: min-content;
+    background-color: #222222;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #1d1d1d;
+}
+
+.karta h3{
+    border-radius: 25px;
+    border-color: black;
+    border-width: 2px;
+    border-style: outset;
+    padding: 5px;
+    padding-left: 10px;
+}
+
+.karta div img{
+    position: relative;
+    top: -30px;
+    left: -30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border-color: black;
+    border-style: outset;
+    background-color: #1d1d1d;
+}
 footer{
     position: absolute;
     bottom: 0;
