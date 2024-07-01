@@ -104,7 +104,7 @@ nav{
     grid-template-columns: 1fr 1fr 1fr;
 }
 .karta{
-    width: min-content;
+    width: 32%;
     background-color: #222222;
     border-radius: 10px;
     border-style: solid;
@@ -113,11 +113,11 @@ nav{
 
 .karta h3{
     border-radius: 25px;
-    border-color: black;
+    border-color: rgb(255, 0, 0);
     border-width: 2px;
     border-style: outset;
     padding: 5px;
-    padding-left: 10px;
+    padding-left: 20px;
 }
 
 .karta div img{
