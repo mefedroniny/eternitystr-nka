@@ -9,7 +9,9 @@ body{
     backdrop-filter: blur(5px);
     height: 1500px;
 }
-
+main{
+    padding-top: 100px;
+}
 #logoMod{
     height: 80px;
     transition: left ease-in-out .25s;
@@ -100,17 +102,28 @@ nav{
     display: grid;
     color: white;
     justify-items: center;
-    gap: 30px;
+    row-gap: 100px;
     grid-template-columns: 1fr 1fr 1fr;
 }
 .karta{
-    width: 32%;
+    position: relative;
+    left: -50px;
+    width: 40%;
     background-color: #222222;
     border-radius: 10px;
     border-style: solid;
     border-color: #1d1d1d;
 }
 
+.kontejner-nadpisu-pro-kartu-kurva{
+    width: 100%; 
+    display: flex; 
+    justify-content: center;
+}
+.kontejner-nadpisu-pro-kartu-kurva h1{
+    position: relative;
+    top: -90px;
+}
 .karta h3{
     border-radius: 25px;
     border-color: rgb(255, 0, 0);
