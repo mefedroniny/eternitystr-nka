@@ -1,0 +1,116 @@
+html{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    margin: 0%;
+    background-attachment: fixed;
+    background-color: rgb(0, 1, 18);
+    backdrop-filter: blur(5px);
+}
+main{
+    padding-top: 100px;
+    min-height: 1000px; 
+}
+#logoMod{
+    height: 80px;
+    transition: left ease-in-out .25s;
+    position: relative;
+    top: -50%;
+    left: -100%;
+}
+#logoLink{
+    left: -100%;
+    transition: left ease-in-out .25s;
+    position: relative;
+    width: 215px;
+    margin: 0%;
+}
+header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+header img{
+    max-width: 500px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+#odkazy{
+    display: flex;
+    justify-content: center;
+}
+
+nav{
+    z-index: 5;
+    display: grid;
+    justify-content: center;
+    height: 40px;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    position: sticky;
+    top: 50px;
+}
+#odkazy a{
+    height: min-content;
+    padding: 1px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin-left: 5%;
+}
+
+h1, h2 {
+    color: #fff;
+}
+p {
+    margin: 10px 0;
+    color: #fff;
+}
+
+li{
+    color: #fff;
+}
+.section {
+    margin-bottom: 20px;
+}
+footer{
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ 
+footer .container{
+    display: flex;
+    justify-content: left;
+    max-width: 100%;
+    padding: 20px;
+    color: rgba(255, 255, 255, 0.514);
+}
+
+.icons{
+    margin: 24px;
+}
+ 
+svg{
+    transition: .4s ease;
+    margin: 0 12px;
+}
+
+svg:hover{
+    fill: #222222;
+    transform: scale(1.3);
+}
+
+hr{
+    border-top: 1px solid #222222;
+    width: 500px;
+    margin: 20px 0;
+    opacity: 25%;
+}

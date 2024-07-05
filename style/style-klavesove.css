@@ -59,93 +59,7 @@ nav{
     color: rgb(255, 255, 255);
     margin-left: 5%;
 }
-.fakce-container{
-    height: 100%;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-    width: 100%;
-    transition: transform ease-in-out 0.3s,width ease-in-out 0.3s;
-}
-.fakce{
 
-    display: grid;
-    justify-items: center;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    margin-left: 10%;
-    margin-right: 10%;
-    overflow: hidden;
-}
-.fakce-container img{
-    z-index: 0;
-    filter: blur(10px);
-    width: 80vw;
-    position: relative;
-    background-color: white;
-    transition: width ease-in-out 0.3s, filter 0.3s;
-}
-.fakce-container img:hover{
-    filter: blur(2px);
-}
-.fakce-container:hover{
-    width: 500%;
-    justify-self: center;
-}
-
-#cont1:hover{transform: translateX(40%);}
-#cont2:hover{transform: translateX(20%);}
-#cont4:hover{transform: translateX(-20%);}
-#cont5:hover{transform: translateX(-40%);}
-
-.tým{
-    display: grid;
-    color: white;
-    justify-items: center;
-    row-gap: 100px;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-.karta{
-    position: relative;
-    min-width: fit-content;
-    left: -50px;
-    width: 40%;
-    background-color: #222222;
-    border-radius: 10px;
-    border-style: solid;
-    border-color: #222222;
-}
-
-.kontejner-nadpisu-pro-kartu-kurva{
-    width: 100%; 
-    display: flex; 
-    justify-content: center;
-}
-.kontejner-nadpisu-pro-kartu-kurva h1{
-    position: relative;
-    top: -90px;
-}
-.karta h3{
-    border-radius: 25px;
-    border-color: rgb(153, 0, 255);
-    border-width: 2px;
-    border-style: outset;
-    padding: 5px;
-    padding-left: 10px;
-    width: fit-content;
-    padding-right: 10px;
-}
-
-.karta div img{
-    position: relative;
-    top: -30px;
-    left: -30px;
-    width: 75px;
-    height: 74px;
-    border-radius: 50%;
-    border-color: #222222;
-    background-color: #222222;
-}
 footer{
     bottom: 0;
     width: 100%;
@@ -189,7 +103,7 @@ hr{
 
 .klavesovyzkratky{
     color: #fff;
-    margin: 7%;
+    margin: 15%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     background-color: #fff;
@@ -199,8 +113,8 @@ hr{
 
 .klavesovyzkratky div{
     width: 99%;
-    margin-top: 0.5%;
-    margin-bottom: 0.5%;
+    margin-top: 1%;
+    margin-bottom: 1%;
     display: flex;
     flex-direction: column;
     align-items: center;
